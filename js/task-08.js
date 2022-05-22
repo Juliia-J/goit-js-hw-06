@@ -10,7 +10,7 @@ function onFormSubmit(event) {
     
     if (email === '' || password === '') {
         alert('Fill in all fields');
-        form.reset();
+        
     } else {
         console.log({ email, password });
         form.reset();

@@ -4,9 +4,11 @@ textInput.className = "#validation-input";
 const inputTextValid = () => {
 
     if (Number(textInput.value.trim().length) === Number(textInput.dataset.length)) {
-        textInput.classList.toggle("valid");
+        textInput.classList.add("valid");
+        textInput.classList.remove("invalid");
     } else {
-        textInput.classList.toggle("invalid");
+        textInput.classList.add("invalid");
+        textInput.classList.remove("valid");
     }
 };
 

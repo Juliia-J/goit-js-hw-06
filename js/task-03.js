@@ -17,7 +17,7 @@ const images = [
 
 const markup = images
   .map((image) => {
-   return `<li class="gallery-item"><img class="image" src="${image.url}" alt="${image.alt}" width="350", height="200"></li>`
+   return `<li class="gallery-item"><img class="image" src="${image.url}" alt="${image.alt}" width="350" height="200"></li>`
   })
   .join("");
 
